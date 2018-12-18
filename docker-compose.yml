@@ -1,0 +1,21 @@
+version: "3"
+services:
+  ncache1:
+    container_name: ncache-ent-server-01
+    hostname: ncache-ent-server-01
+    image: alachisoft/ncache:enterprise-server-4.9.1
+    networks:
+      transNet:
+        ipv4_address: 20.200.20.251
+        
+  ncache2:
+    container_name: ncache-ent-server-02
+    hostname: ncache-ent-server-02
+    image: alachisoft/ncache:enterprise-server-4.9.1
+    networks:
+      transNet:
+        ipv4_address: 20.200.20.252
+        
+networks:
+  transNet:
+    external: true

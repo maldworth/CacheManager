@@ -1,0 +1,6 @@
+version: "3"
+services:
+  ncache:
+    container_name: cachemanager-ncache
+    hostname: cachemanager-ncache
+    image: alachisoft/ncache:opensource-server-4.9.1
